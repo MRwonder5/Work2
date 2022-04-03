@@ -21,7 +21,6 @@ public class  StudentDAOIMP implements StudentDAO {
 
             pstmt = conn.getConnection().prepareStatement(sql);
             pstmt.setLong(1, s.getID());
-            //pstmt.setString(1,s.getID());
             pstmt.setString(2, s.getName());
 
             pstmt.executeUpdate();
@@ -42,7 +41,6 @@ public class  StudentDAOIMP implements StudentDAO {
 
             pstmt = conn.getConnection().prepareStatement(sql);
             pstmt.setLong(1, s.getID());
-            //pstmt.setString(1,s.getID());
             pstmt.setString(2, s.getName());
             pstmt.setLong(3, s.getID());
             pstmt.executeUpdate();
